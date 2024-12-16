@@ -10,7 +10,7 @@ let cartTotal = document.getElementById('cart-total');
 const total = document.getElementById('total-js');
 const check = document.querySelector('.cart-section');
 check.addEventListener('click', () => {
-    window.location.href = "/cart.html";
+    window.location.href = "cart.html";
 });
 let vaultMoney = 1000; // Starting vault money
 let order = null;
