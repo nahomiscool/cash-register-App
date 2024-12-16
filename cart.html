@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart View</title>
+    <link rel="stylesheet" href="/cart.css">
+</head>
+<body>
+    <header class="cart-header">
+        <h1>Your Cart</h1>
+        <button class="back-button" onclick="window.location.href='index.html'">Continue Shopping</button>
+    </header>
+
+    <section class="cart-container">
+        <div class="cart-items">
+            <!-- Example cart item -->
+            <div class="cart-item">
+                <div class="item-details">
+                    <h3>Product Name</h3>
+                    <p>Price: $100</p>
+                    <p>Quantity: 1</p>
+                </div>
+                <button class="remove-item">Remove</button>
+            </div>
+        </div>
+
+        <div class="cart-summary">
+            <h2>Order Summary</h2>
+            <p>Total Items: <span id="total-items">1</span></p>
+            <p>Total Price: <span id="total-price">$100</span></p>
+            <button class="checkout-button">Checkout</button>
+        </div>
+    </section>
+    <script src="/cart.js"></script>
+</body>
+</html>

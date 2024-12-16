@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Register</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Cash Register</h1>
+
+    <!-- Input Section -->
+    <div class="input-section">
+        <input id="price-js" type="text" placeholder="Select an item" readonly>
+        <input id="moneyTaken-js" type="text" placeholder="Enter money given">
+        <button id="submit-js">BUY</button>
+    </div>
+
+    <!-- Message Section -->
+    <div class="message-section">
+        <p id="message-js">Welcome! Please select an item.</p>
+        <p id="detail">Details will appear here.</p>
+        <p id="vault">Vault money: $1000</p>
+    </div>
+
+    <!-- Inventory Section -->
+    <section class="inventory">
+        <!-- Inventory Items -->
+        <div class="bt">
+            <button id="car-js">Car</button>
+            <p class="item-price">Price: $100</p>
+        </div>
+        <div class="bt">
+            <button id="plane-js">Plane</button>
+            <p class="item-price">Price: $200</p>
+        </div>
+        <div class="bt">
+            <button id="house-js">House</button>
+            <p class="item-price">Price: $246</p>
+        </div>
+        <div class="bt">
+            <button id="food-js">Food</button>
+            <p class="item-price">Price: $300</p>
+        </div>
+        <div class="bt">
+            <button id="water-js">Water</button>
+            <p class="item-price">Price: $400</p>
+        </div>
+        <div class="bt">
+            <button id="door-js">Door</button>
+            <p class="item-price">Price: $500</p>
+        </div>
+        <div class="bt">
+            <button id="Mangoo-js">Mango</button>
+            <p class="item-price">Price: $564</p>
+        </div>
+        <div class="bt">
+            <button id="Papaya-js">Papaya</button>
+            <p class="item-price">Price: $444</p>
+        </div>
+        <div class="bt">
+            <button id="table-js">Table</button>
+            <p class="item-price">Price: $678</p>
+        </div>
+    </section>
+    <section class="cart-section">
+        <h2>Your Cart</h2>
+        <ul id="cart-items">
+        </ul>
+        <p id="cart-total">Total: <span id="total-js">$0</span></p>
+    </section>
+    <script type="module" src="/app.js"></script>
+    <script type="module" src="/script.js"></script>
+</body>
+</html>
